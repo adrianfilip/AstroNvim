@@ -405,3 +405,9 @@ maps.n["<leader>uy"] = { ui.toggle_syntax, desc = "Toggle syntax highlight" }
 maps.n["<leader>uh"] = { ui.toggle_foldcolumn, desc = "Toggle foldcolumn" }
 
 utils.set_mappings(astronvim.user_opts("mappings", maps))
+
+vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprevious<CR>', { noremap = true, silent = true })
+
+
+
